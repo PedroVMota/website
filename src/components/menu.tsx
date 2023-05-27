@@ -17,13 +17,13 @@ export default function Menu() {
 				</div>
 			</div>
 			<div>
-			{
+{/* 			{
 				menu_data.map((item, index) => (
 					<Link href={item.link} className={`px-4 py-2`}>
-						{item.title}
+						key: {item.title}
 					</Link>
 				))
-			}
+			} */}
 			</div>
 			
 		</div>
