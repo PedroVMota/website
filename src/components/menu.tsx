@@ -16,16 +16,15 @@ export default function Menu() {
 					</div>
 				</div>
 			</div>
-			<div>
-{/* 			{
-				menu_data.map((item, index) => (
-					<Link href={item.link} className={`px-4 py-2`}>
-						key: {item.title}
-					</Link>
-				))
-			} */}
-			</div>
-			
+				<ul className="flex">
+					{menu_data.map((item, index) => (
+						<li className="flex px-4 py-2" key={index}>
+							<Link href={item.link}>
+								{item.title}
+							</Link>
+						</li>
+					))}
+				</ul>
 		</div>
 	)
 }
